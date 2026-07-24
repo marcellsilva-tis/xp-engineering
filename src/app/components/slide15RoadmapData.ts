@@ -105,28 +105,28 @@ export const ROADMAP_TASK_TOOLTIPS: Record<string, RoadmapTaskTooltip> = {
     title: "Insights Review",
     body: "Primeiro rito de Insights Review com apresentação e publicação de resultados no Hub de UX. Disponibilizar o material também ao marketing e área de vendas da TIS para uso comercial.",
   },
-  "Ritos e processos iniciais": {
-    title: "Ritos e processos iniciais",
+  "Ritos iniciais": {
+    title: "Ritos iniciais",
     body: "Execução dos ritos iniciais da área e disseminação do processo, aos designers e demais áreas. Incluindo nivelamento de conhecimento para uso e entendimento do processo pelos designers.",
   },
-  "Implantação do processo e ritos no piloto": {
-    title: "Implantação do processo e ritos no piloto",
+  "Implantação do processo em piloto": {
+    title: "Implantação do processo em piloto",
     body: "Execução do processo na prática em projecto piloto, com ritos formais e pleno uso do design system.",
   },
-  "Revisão dos processos": {
-    title: "Revisão dos processos",
+  Revisão: {
+    title: "Revisão",
     body: "Revisão do que deu certo e o que deu errado para melhorias e evolução do processo. Garantir o bom uso de recursos e eliminar etapas desnecessárias.",
   },
-  "Primeiros indicadores definidos": {
-    title: "Primeiros indicadores definidos",
+  "Def. indicadores": {
+    title: "Definição de indicadores",
     body: "Definição dos indicadores iniciais como metas a atingir durante o projecto piloto.",
   },
-  "Medição com o projecto piloto": {
-    title: "Medição com o projecto piloto",
+  "Medir projecto piloto": {
+    title: "Medir projecto piloto",
     body: "Monitorar as métricas operacionais do projecto para acompanhar a evolução das metas estabelecidas.",
   },
-  "Revisão / Definição ciclo seguinte": {
-    title: "Revisão / Definição ciclo seguinte",
+  "Def. próx. ciclo": {
+    title: "Definição do próximo ciclo",
     body: "Revisar os resultados do piloto, avaliar e registar aprendizagem para correcção de curso e planeamento para o próximo ciclo. Além de expandir e replicar processos para os outros projectos.",
   },
 };
@@ -145,26 +145,26 @@ export const ROADMAP_ROWS: RoadmapRow[] = [
   {
     label: "Hub de conhecimento",
     tasks: [
-      { label: "Playbook", colStart: 2, colSpan: 1, color: "purple", padding: 20 },
-      { label: "Criação do Hub de UX", colStart: 3, colSpan: 2, color: "purple", padding: 20 },
-      { label: "Templates de metodologias e IA", colStart: 5, colSpan: 3, color: "purple", padding: 20 },
+      { label: "Playbook", colStart: 3, colSpan: 1, color: "purple", padding: 20 },
+      { label: "Criação do Hub de UX", colStart: 4, colSpan: 2, color: "purple", padding: 20 },
+      { label: "Templates de metodologias e IA", colStart: 6, colSpan: 2, color: "purple", padding: 20 },
       { label: "Insights", colStart: 8, colSpan: 1, color: "purple", padding: 20 },
     ],
   },
   {
     label: "Ritos e processo",
     tasks: [
-      { label: "Ritos e processos iniciais", colStart: 2, colSpan: 2, color: "navy", padding: 20 },
-      { label: "Implantação do processo e ritos no piloto", colStart: 4, colSpan: 3, color: "navy", padding: 16 },
-      { label: "Revisão dos processos", colStart: 7, colSpan: 2, color: "navy", padding: 16 },
+      { label: "Ritos iniciais", colStart: 4, colSpan: 1, color: "navy", padding: 20 },
+      { label: "Implantação do processo em piloto", colStart: 5, colSpan: 3, color: "navy", padding: 16 },
+      { label: "Revisão", colStart: 8, colSpan: 1, color: "navy", padding: 16 },
     ],
   },
   {
     label: "Adopção e métricas",
     tasks: [
-      { label: "Primeiros indicadores definidos", colStart: 2, colSpan: 2, color: "gray", padding: 20 },
-      { label: "Medição com o projecto piloto", colStart: 4, colSpan: 3, color: "gray", padding: 20 },
-      { label: "Revisão / Definição ciclo seguinte", colStart: 7, colSpan: 2, color: "gray", padding: 20 },
+      { label: "Def. indicadores", colStart: 4, colSpan: 1, color: "gray", padding: 20 },
+      { label: "Medir projecto piloto", colStart: 5, colSpan: 3, color: "gray", padding: 20 },
+      { label: "Def. próx. ciclo", colStart: 8, colSpan: 1, color: "gray", padding: 20 },
     ],
   },
 ];
