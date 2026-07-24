@@ -13,7 +13,7 @@ export const ROLES: RoleDefinition[] = [
     quote:
       "Profissional sênior com experiência em liderança de prática de design, gestão de sistemas de design e implementação de processos em contextos onde a disciplina está em maturação.",
     responsibilities: [
-      "Definir e evoluir o processo de design da fábrica",
+      "Definir e evoluir o processo de design na TIS.",
       "Liderar a construção e governança do Design System",
       "Orientar a equipa em decisões de design e critérios de qualidade",
       "Gerir alocação, desenvolvimento e ritos da equipa",

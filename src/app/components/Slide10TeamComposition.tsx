@@ -47,7 +47,7 @@ const PHASES: PhaseCard[] = [
       { bold: "4 Designers", suffix: "(3 Plenos e 1 Júnior)" },
       { bold: "1 UX Researcher", suffix: "(Pleno)" },
     ],
-    focus: "Researcher dedicado, implantação de métricas, consumo do Design System em projectos da fábrica.",
+    focus: "Researcher dedicado, implantação de métricas, consumo do Design System em projectos da TIS.",
   },
   {
     phase: "ESCALA",
