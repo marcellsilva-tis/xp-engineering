@@ -189,7 +189,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  A área é accionada para produzir ecrãs em prazos curtos, com pouca análise prévia. Quando aprovados, seguem directamente para desenvolvimento.
+                  O núcleo é accionado para produzir ecrãs em prazos curtos, com pouca análise prévia. Quando aprovados, seguem directamente para desenvolvimento.
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
@@ -389,7 +389,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d] whitespace-nowrap"
       >
-        A área é envolvida tarde por não ter uma porta de entrada formalizada.
+        O núcleo é envolvido tarde por não ter uma porta de entrada formalizada.
       </motion.p>
 
       {/* ── Footer ── */}

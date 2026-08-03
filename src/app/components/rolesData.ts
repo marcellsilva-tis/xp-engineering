@@ -9,7 +9,7 @@ export const ROLES: RoleDefinition[] = [
   {
     title: "Design Lead",
     summary:
-      "Lidera a prática de design da área como ponte entre negócio e execução, definindo processos, governando o Design System, gerindo a equipa e respondendo pela qualidade e maturidade operacional da disciplina.",
+      "Lidera a prática de design do núcleo como ponte entre negócio e execução, definindo processos, governando o Design System, gerindo a equipa e respondendo pela qualidade e maturidade operacional da disciplina.",
     quote:
       "Profissional sênior com experiência em liderança de prática de design, gestão de sistemas de design e implementação de processos em contextos onde a disciplina está em maturação.",
     responsibilities: [
@@ -18,7 +18,7 @@ export const ROLES: RoleDefinition[] = [
       "Orientar a equipa em decisões de design e critérios de qualidade",
       "Gerir alocação, desenvolvimento e ritos da equipa",
       "Estabelecer métricas de capacidade e qualidade",
-      "Representar a área junto à liderança e stakeholders",
+      "Representar o núcleo junto à liderança e stakeholders",
       "Actuar como designer executor em projectos estratégicos",
     ],
   },
@@ -54,7 +54,7 @@ export const ROLES: RoleDefinition[] = [
   {
     title: "Designer Júnior",
     summary:
-      "Apoia a execução de projectos com supervisão e actua em demandas do dia-a-dia, desenvolvendo-se dentro da prática e dos processos da área.",
+      "Apoia a execução de projectos com supervisão e actua em demandas do dia-a-dia, desenvolvendo-se dentro da prática e dos processos do núcleo.",
     quote:
       "Perfil em início de carreira com base técnica em design e aptidão para aprendizagem dentro de um processo estruturado.",
     responsibilities: [
@@ -75,7 +75,7 @@ export const ROLES: RoleDefinition[] = [
     responsibilities: [
       "Conduzir entrevistas, testes de usabilidade e análise qualitativa",
       "Definir personas e mapear jornadas dos utilizadores",
-      "Estruturar e manter repositório de insights da área",
+      "Estruturar e manter repositório de insights do núcleo",
       "Traduzir achados em recomendações para design e produto",
       "Colaborar com os designers no planeamento de discovery",
       "Executar research em projectos de service design",

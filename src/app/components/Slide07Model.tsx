@@ -747,7 +747,7 @@ function PageOne({ metrics }: { metrics: Metrics }) {
           color: NAVY,
         }}
       >
-        A área passa a actuar com critério de triagem e priorização. Reduzindo entrada tardia, retrabalho e decisões baseadas apenas em percepção
+        O núcleo passa a actuar com critério de triagem e priorização. Reduzindo entrada tardia, retrabalho e decisões baseadas apenas em percepção
         visual.
       </p>
 

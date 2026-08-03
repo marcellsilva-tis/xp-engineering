@@ -46,7 +46,7 @@ export const ROADMAP_PAGE_COPY = [
   },
   {
     title: "Dependências e estratégia de adopção",
-    subtitle: "O que é necessário para a área sair do plano e entrar em operação.",
+    subtitle: "O que é necessário para o núcleo sair do plano e entrar em operação.",
     contentTop: 358,
   },
 ] as const;
@@ -91,11 +91,11 @@ export const ROADMAP_TASK_TOOLTIPS: Record<string, RoadmapTaskTooltip> = {
   },
   Kickoff: {
     title: "Kickoff",
-    body: "Disponibilização desta apresentação como marco inicial da área de Experience Engineering, para alinhar a visão, o modelo de actuação e os próximos passos com as restantes áreas da TIS.",
+    body: "Disponibilização desta apresentação como marco inicial do núcleo de Experience Engineering, para alinhar a visão, o modelo de actuação e os próximos passos com as restantes áreas da TIS.",
   },
   "Criação do Hub de UX": {
     title: "Criação do Hub de UX",
-    body: "Portal agregador de conhecimento da área, contendo a visão do processo, melhores práticas, templates de metodologias, ferramentas e suporte.",
+    body: "Portal agregador de conhecimento do núcleo, contendo a visão do processo, melhores práticas, templates de metodologias, ferramentas e suporte.",
   },
   "Templates de metodologias e IA": {
     title: "Templates de metodologias e IA",
@@ -107,7 +107,7 @@ export const ROADMAP_TASK_TOOLTIPS: Record<string, RoadmapTaskTooltip> = {
   },
   "Ritos iniciais": {
     title: "Ritos iniciais",
-    body: "Execução dos ritos iniciais da área e disseminação do processo, aos designers e demais áreas. Incluindo nivelamento de conhecimento para uso e entendimento do processo pelos designers.",
+    body: "Execução dos ritos iniciais do núcleo e disseminação do processo, aos designers e demais áreas. Incluindo nivelamento de conhecimento para uso e entendimento do processo pelos designers.",
   },
   "Implantação do processo em piloto": {
     title: "Implantação do processo em piloto",

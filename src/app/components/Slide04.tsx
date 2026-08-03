@@ -307,7 +307,7 @@ export function Slide04({ scaleX, scaleY }: Props) {
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
       >
-        A área de Experience Engineering deve atuar em todas
+        O núcleo de Experience Engineering deve actuar em todas
         elas.
       </motion.p>
 

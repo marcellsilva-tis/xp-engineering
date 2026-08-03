@@ -132,9 +132,9 @@ export function Slide05({ scaleX, scaleY }: Props) {
           style={{ fontSize: vs(28), lineHeight: 1.5, width: vx(1536) }}
           className="font-['Bronkoh-Regular',sans-serif] not-italic text-[#2f3237]"
         >
-          A área deve assegurar que as soluções atendam a problemas reais, funcionem adequadamente em
+          O núcleo deve assegurar que as soluções atendam a problemas reais, funcionem adequadamente em
           cada contexto de uso e cumpram os requisitos de negócio. Para isso, existem seis frentes nas
-          quais devemos atuar com protagonismo:
+          quais devemos actuar com protagonismo:
         </p>
       </motion.div>
 
