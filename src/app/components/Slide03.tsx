@@ -189,7 +189,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  A área é accionada para produzir ecrãs com prazo curto e sem fundamentação prévia. Quando aprovadas, vão directamente para desenvolvimento.
+                  A área é accionada para produzir ecrãs em prazos curtos, com pouca análise prévia. Quando aprovados, seguem directamente para desenvolvimento.
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
@@ -197,13 +197,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Projecto inicia pelo desenho
+                  O projecto inicia-se pelo desenho
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  O ponto de partida do projecto é o desenho de ecrãs, porque os programadores precisam de material para trabalhar. As etapas anteriores não acontecem.
+                  O ponto de partida do projecto é o desenho de ecrãs, porque os programadores precisam de material para trabalhar. As etapas anteriores nem sempre acontecem.
                 </p>
               </div>
             </div>
@@ -243,13 +243,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Sem etapa de Discovery
+                  Discovery não integrado
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  UX é entendido como brainstorming seguido de criação de ecrãs. A compreensão do problema fica de fora.
+                  A actuação concentra-se no brainstorming e na criação de ecrãs. A compreensão do problema fica por aprofundar.
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
@@ -257,13 +257,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Sem teste de usabilidade
+                  Validação com stakeholders
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  Os protótipos seguem para desenvolvimento sem validação com o utilizador. Os problemas são identificados muito tarde.
+                  Os protótipos são validados apenas com stakeholders, sem testes com utilizadores. Alguns problemas só são identificados mais tarde.
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
@@ -271,13 +271,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Escopos pré-fechados
+                  Âmbitos pré-definidos
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  User stories sem detalhamento ou documentação já contêm escopo definido, sem espaço para alternativas.
+                  As user stories têm, muitas vezes, detalhe insuficiente; as orientações chegam fragmentadas e com pouco espaço para exploração.
                 </p>
               </div>
             </div>
@@ -323,7 +323,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  Alguns projectos são descartados por não atenderem à necessidade real, ou por disputa externa.
+                  Alguns projectos podem não avançar por não responderem à necessidade real ou por factores não considerados.
                 </p>
               </div>
             </div>
@@ -389,7 +389,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d] whitespace-nowrap"
       >
-        A área entra tarde porque não tem uma porta de entrada formalizada.
+        A área é envolvida tarde por não ter uma porta de entrada formalizada.
       </motion.p>
 
       {/* ── Footer ── */}

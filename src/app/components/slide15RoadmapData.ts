@@ -58,7 +58,7 @@ export const ROADMAP_ADOPTION_ITEMS = [
   },
   {
     title: "Piloto",
-    body: "Piloto depende de Playbook publicado, Design System V1 disponível para uso, definição do projecto e ritos e processos iniciais implantados.",
+    body: "Piloto depende do kickoff partilhado, do Design System V1 disponível para uso, da definição do projecto e dos ritos e processos iniciais alinhados.",
   },
   {
     title: "Escala",
@@ -89,9 +89,9 @@ export const ROADMAP_TASK_TOOLTIPS: Record<string, RoadmapTaskTooltip> = {
     title: "Design System V1.5",
     body: "Evolução natural com incrementos e correcções do Design System, pós-validação inicial. Novos itens de maior complexidade entram em backlog para V2.",
   },
-  Playbook: {
+  Kickoff: {
     title: "Kickoff",
-    body: "Disponibilização desta apresentação como documentação fundacional da área Experience Engineering. Adaptações podem ser necessárias antes da publicação para uso como Playbook.",
+    body: "Disponibilização desta apresentação como marco inicial da área de Experience Engineering, para alinhar a visão, o modelo de actuação e os próximos passos com as restantes áreas da TIS.",
   },
   "Criação do Hub de UX": {
     title: "Criação do Hub de UX",
@@ -145,7 +145,7 @@ export const ROADMAP_ROWS: RoadmapRow[] = [
   {
     label: "Hub de conhecimento",
     tasks: [
-      { label: "Playbook", colStart: 3, colSpan: 1, color: "purple", padding: 20 },
+      { label: "Kickoff", colStart: 3, colSpan: 1, color: "purple", padding: 20 },
       { label: "Criação do Hub de UX", colStart: 4, colSpan: 2, color: "purple", padding: 20 },
       { label: "Templates de metodologias e IA", colStart: 6, colSpan: 2, color: "purple", padding: 20 },
       { label: "Insights", colStart: 8, colSpan: 1, color: "purple", padding: 20 },

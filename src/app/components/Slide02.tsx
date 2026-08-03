@@ -35,11 +35,11 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
   const BULLETS = [
     {
       w: 549,
-      text: "A área de UX opera dentro da TIS de forma reactiva, sendo accionada pontualmente nos projectos.",
+      text: "Nos projectos da TIS, o trabalho de UX é solicitado sobretudo para responder a pedidos pontuais.",
     },
     {
       w: 620,
-      text: "A operação atual ainda não está formalizada por método repetível ou entrada estruturada nos processos da empresa.",
+      text: "Existe oportunidade para consolidar um método repetível e uma entrada mais estruturada nos processos da empresa.",
     },
   ];
 
@@ -75,20 +75,20 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
             style={{ fontSize: vs(16), letterSpacing: vs(2) }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic leading-normal text-[#036ef2] uppercase"
           >
-            Diagnóstico
+            Ponto de partida
           </p>
           <p
             style={{ fontSize: vs(80), letterSpacing: vs(-1.5), width: vx(640) }}
             className="font-['Bronkoh-Heavy',sans-serif] not-italic leading-none text-[#04165d]"
           >
-            Visão geral sobre UX na TIS até hoje
+            O contexto actual de UX na TIS
           </p>
         </div>
         <p
           style={{ fontSize: vs(28), width: vx(640) }}
           className="font-['Bronkoh-Regular',sans-serif] not-italic leading-[1.5] text-[#2f3237]"
         >
-          Como a área opera e o que as pessoas pensam sobre UX.
+          Percepções internas e oportunidades para estruturar a disciplina.
         </p>
       </motion.div>
 
@@ -136,7 +136,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
             </div>
             <div style={{ flex: 1 }} className="font-['Manrope',sans-serif] font-normal text-[#04165d]">
               <p style={{ fontSize: vs(20) }} className="leading-[1.5]">
-                Estágio de maturidade UX da TIS na escala NN/g:
+                Referência de maturidade de UX na TIS (escala NN/g):
               </p>
               <p
                 style={{ fontSize: vs(24), letterSpacing: vs(-0.25) }}
@@ -203,7 +203,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic leading-[1.3] text-[#04165d] whitespace-nowrap"
       >
-        Há demanda. Mas o modo como ela é tratada hoje produz fricção.
+        Há espaço para tornar a actuação de UX mais integrada, previsível e colaborativa.
       </motion.p>
 
       {/* ── Footer ── */}
