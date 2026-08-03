@@ -82,13 +82,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
             style={{ fontSize: vs(16), letterSpacing: vs(2), lineHeight: "normal" }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#036ef2] uppercase"
           >
-            Estrutura e processo atual
+            Estrutura e processo actual
           </p>
           <p
             style={{ fontSize: vs(80), letterSpacing: vs(-1.5), lineHeight: 1 }}
             className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
           >
-            Como tem decorrido o trabalho da área
+            Como decorre actualmente o trabalho de UX
           </p>
         </div>
         {/* Subtitle */}
@@ -227,7 +227,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                 style={{ fontSize: vs(16), letterSpacing: vs(2), lineHeight: "normal" }}
                 className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#036ef2] uppercase"
               >
-                O que falta
+                A evoluir
               </p>
               <p
                 style={{ fontSize: vs(80), letterSpacing: vs(-1.5), lineHeight: 1 }}

@@ -41,7 +41,7 @@ const PHASES: PhaseCard[] = [
   },
   {
     phase: "EXPANSÃO",
-    title: "6 meses",
+    title: "Cenário 6 meses",
     roles: [
       { bold: "1 Designer Lead" },
       { bold: "4 Designers", suffix: "(3 Plenos e 1 Júnior)" },
@@ -51,7 +51,7 @@ const PHASES: PhaseCard[] = [
   },
   {
     phase: "ESCALA",
-    title: "12 meses",
+    title: "Cenário 12 meses",
     roles: [
       { bold: "1 Designer Lead" },
       { bold: "7 Designers", suffix: "(1 Sênior, 4 Plenos e 2 Júniors)" },

@@ -111,7 +111,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
           style={{ fontSize: vs(16), letterSpacing: vs(2) }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic leading-normal text-[#036ef2] uppercase"
         >
-          Como a área opera até hoje
+          Como o trabalho decorre hoje
         </p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: vy(32) }}>
