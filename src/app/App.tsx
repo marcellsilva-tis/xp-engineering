@@ -381,7 +381,7 @@ export default function App() {
                 style={{ fontSize: vs(24), letterSpacing: vs(1) }}
                 className="font-['Bronkoh-Regular',sans-serif] not-italic text-[#036ef2] uppercase whitespace-nowrap"
               >
-                Planeamento do núcleo
+                Plano de implantação
               </motion.p>
 
               <div style={{ height: vy(40) }} />
