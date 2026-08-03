@@ -70,14 +70,14 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
           position: "absolute",
           left: vx(120),
           top: vy(96),
-          width: vx(860),
+          width: vx(1120),
           display: "flex",
           flexDirection: "column",
           gap: vs(24),
         }}
       >
         {/* Label + Title */}
-        <div style={{ display: "flex", flexDirection: "column", gap: vs(16), width: vx(650) }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: vs(16), width: vx(1120) }}>
           <p
             style={{ fontSize: vs(16), letterSpacing: vs(2), lineHeight: "normal" }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#036ef2] uppercase"
@@ -88,7 +88,8 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
             style={{ fontSize: vs(80), letterSpacing: vs(-1.5), lineHeight: 1 }}
             className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
           >
-            Como decorre actualmente o trabalho de UX
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>Como decorre actualmente</span>
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>o trabalho de UX</span>
           </p>
         </div>
         {/* Subtitle */}
