@@ -88,7 +88,7 @@ export function Slide02({ scaleX, scaleY, onPrev, onNext, onModalChange }: Props
           style={{ fontSize: vs(28), width: vx(640) }}
           className="font-['Bronkoh-Regular',sans-serif] not-italic leading-[1.5] text-[#2f3237]"
         >
-          Percepções internas e oportunidades para estruturar a disciplina.
+          Oportunidades para estruturar a disciplina.
         </p>
       </motion.div>
 
