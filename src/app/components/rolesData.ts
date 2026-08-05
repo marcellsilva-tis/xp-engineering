@@ -11,7 +11,7 @@ export const ROLES: RoleDefinition[] = [
     summary:
       "Lidera a prática de design do núcleo como ponte entre negócio e execução, definindo processos, governando o Design System, gerindo a equipa e respondendo pela qualidade e maturidade operacional da disciplina.",
     quote:
-      "Profissional sênior com experiência em liderança de prática de design, gestão de sistemas de design e implementação de processos em contextos onde a disciplina está em maturação.",
+      "Profissional experiente em liderança de prática de design, gestão de sistemas de design e implementação de processos em contextos onde a disciplina está em maturação.",
     responsibilities: [
       "Definir e evoluir o processo de design na TIS.",
       "Liderar a construção e governança do Design System",
@@ -23,21 +23,21 @@ export const ROLES: RoleDefinition[] = [
     ],
   },
   {
-    title: "Designer Sênior",
+    title: "Designer Consultor",
     summary:
       "Executa projectos de maior complexidade com autonomia, desde o discovery até ao handoff com programadores, apoia tecnicamente os outros designers no dia-a-dia e contribui para a evolução do Design System.",
     quote:
       "Experiência sólida em design de produto em contextos complexos e multidisciplinares, com capacidade de comunicação técnica com equipa e desenvolvimento.",
     responsibilities: [
       "Executar projectos de maior complexidade do discovery ao handoff",
-      "Apoiar na orientação de Plenos e Júniors no dia-a-dia",
+      "Apoiar na orientação de Analistas e Assistentes no dia-a-dia",
       "Contribuir para a evolução da maturidade da equipa",
       "Garantir que o processo de handoff é seguido nas entregas",
       "Contribuir para a evolução do Design System",
     ],
   },
   {
-    title: "Designer Pleno",
+    title: "Designer Analista",
     summary:
       "Executa projectos de ponta a ponta, apoia e actua em discovery, desenvolve trabalhos diversos do fluxo de design, consumindo o Design System e contribuindo pontualmente para a sua evolução.",
     quote:
@@ -52,7 +52,7 @@ export const ROLES: RoleDefinition[] = [
     ],
   },
   {
-    title: "Designer Júnior",
+    title: "Designer Assistente",
     summary:
       "Apoia a execução de projectos com supervisão e actua em demandas do dia-a-dia, desenvolvendo-se dentro da prática e dos processos do núcleo.",
     quote:
@@ -61,7 +61,7 @@ export const ROLES: RoleDefinition[] = [
       "Desenhar interfaces e fluxos de menor complexidade",
       "Adaptar padrões e componentes existentes a novos contextos",
       "Atender pedidos de ajuste e evolução em projectos entregues",
-      "Auxiliar Plenos e Sêniors nas entregas do dia-a-dia",
+      "Auxiliar Analistas e Consultores nas entregas do dia-a-dia",
       "Preparar e organizar assets para handoff",
       "Participar em revisões e incorporar feedbacks",
     ],
