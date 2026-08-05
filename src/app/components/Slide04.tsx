@@ -307,8 +307,7 @@ export function Slide04({ scaleX, scaleY }: Props) {
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
       >
-        O núcleo de Experience Engineering deve actuar em todas
-        elas.
+        Experience Engineering deve actuar em todas elas.
       </motion.p>
 
       {/* ── Citation ── */}
