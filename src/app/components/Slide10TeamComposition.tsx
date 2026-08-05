@@ -35,7 +35,7 @@ const PHASES: PhaseCard[] = [
     title: "Hoje",
     roles: [
       { bold: "1 Designer Lead" },
-      { bold: "2 Designers", suffix: "(1 Pleno e 1 Júnior)" },
+      { bold: "2 Designers", suffix: "(2 Analistas)" },
     ],
     focus: "Foco em processo mínimo, Design System v1, templates, piloto e handoff padronizado.",
   },
@@ -44,8 +44,8 @@ const PHASES: PhaseCard[] = [
     title: "Cenário 6 meses",
     roles: [
       { bold: "1 Designer Lead" },
-      { bold: "4 Designers", suffix: "(3 Plenos e 1 Júnior)" },
-      { bold: "1 UX Researcher", suffix: "(Pleno)" },
+      { bold: "4 Designers", suffix: "(4 Analistas)" },
+      { bold: "1 UX Researcher" },
     ],
     focus: "Researcher dedicado, implantação de métricas, consumo do Design System em projectos da TIS.",
   },
@@ -54,8 +54,8 @@ const PHASES: PhaseCard[] = [
     title: "Cenário 12 meses",
     roles: [
       { bold: "1 Designer Lead" },
-      { bold: "7 Designers", suffix: "(1 Sênior, 4 Plenos e 2 Júniors)" },
-      { bold: "1 UX Researcher", suffix: "(Pleno)" },
+      { bold: "6 Designers", suffix: "(2 Consultores e 4 Analistas)" },
+      { bold: "2 UX Researchers" },
     ],
     focus: "Cultura de pesquisa estabelecida, decisões apoiadas por dados, designers além da entrega de UI.",
   },
