@@ -307,7 +307,7 @@ export function Slide04({ scaleX, scaleY }: Props) {
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
       >
-        Experience Engineering deve actuar em todas elas.
+        O Núcleo de Experiência deve actuar em todas elas.
       </motion.p>
 
       {/* ── Citation ── */}
@@ -643,7 +643,7 @@ export function Slide04({ scaleX, scaleY }: Props) {
           }}
           className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
         >
-          PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING
+          PLANO DE IMPLANTAÇÃO  -  Núcleo de Experiência
         </p>
       </div>
     </motion.div>

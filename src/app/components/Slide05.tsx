@@ -122,7 +122,7 @@ export function Slide05({ scaleX, scaleY }: Props) {
             style={{ fontSize: vs(80), letterSpacing: vs(-1.5), lineHeight: 0 }}
             className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
           >
-            <p style={{ lineHeight: 1, marginBottom: 0 }}>Experience Engineering</p>
+            <p style={{ lineHeight: 1, marginBottom: 0 }}>Núcleo de Experiência</p>
             <p style={{ lineHeight: 1 }}>muito além do desenho de ecrãs</p>
           </div>
         </div>
@@ -290,7 +290,7 @@ export function Slide05({ scaleX, scaleY }: Props) {
             style={{ fontSize: vs(14), letterSpacing: vs(1.5) }}
             className="font-['Bronkoh-SemiBold',sans-serif] not-italic text-[#6e7587] uppercase whitespace-nowrap"
           >
-            PLANO DE IMPLANTAÇÃO  -  EXPERIENCE ENGINEERING
+            PLANO DE IMPLANTAÇÃO  -  Núcleo de Experiência
           </p>
         </div>
 
