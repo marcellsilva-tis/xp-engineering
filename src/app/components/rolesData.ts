@@ -43,7 +43,7 @@ export const ROLES: RoleDefinition[] = [
     quote:
       "Profissional com experiência em design de produto digital, domínio de ferramentas e processos, com capacidade de execução autónoma em projectos.",
     responsibilities: [
-      "Mapear jornadas e definir fluxos de interação",
+      "Mapear jornadas e definir fluxos de interacção",
       "Prototipar soluções em diferentes níveis de fidelidade",
       "Preparar handoff com especificações para desenvolvimento",
       "Identificar e reportar inconsistências de design",

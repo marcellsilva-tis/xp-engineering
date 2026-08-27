@@ -161,7 +161,7 @@ function ExpandButton({ sc, onClick }: { sc: (n: number) => number; onClick: (ev
   return (
     <motion.button
       type="button"
-      aria-label="Expandir infográfico em tela cheia"
+      aria-label="Expandir infográfico em ecrã inteiro"
       initial="rest"
       animate="rest"
       whileHover="hover"
@@ -217,7 +217,7 @@ function ExpandHotspot({
     <button
       type="button"
       data-expand-hotspot="slide-6"
-      aria-label="Expandir infográfico em tela cheia"
+      aria-label="Expandir infográfico em ecrã inteiro"
       onMouseEnter={() => onHoverChange?.(true)}
       onMouseLeave={() => onHoverChange?.(false)}
       onMouseMove={() => onHoverChange?.(true)}
@@ -549,7 +549,7 @@ export function Slide06({ scaleX, scaleY, onExpandedChange, onExpandHoverChange 
     { title: "Explorar",   desc: "Gerar e avaliar possibilidades de solução" },
     { title: "Validar",    desc: "Testar com utilizadores, iterar com evidência" },
     { title: "Entregar",   desc: "Especificar, alinhar com dev, acompanhar build" },
-    { title: "Acompanhar", desc: "Avaliar impacto, extrair aprendizados" },
+    { title: "Acompanhar", desc: "Avaliar impacto, extrair aprendizagens" },
   ];
 
   const TAGS = [

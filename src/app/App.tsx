@@ -53,6 +53,7 @@ export default function App() {
   const [isDragAreaActive, setIsDragAreaActive] = useState(false);
   const [isDragCursorIconLatched, setIsDragCursorIconLatched] = useState(false);
   const [isExpandHover, setIsExpandHover] = useState(false);
+  const [isIcebergLayerHover, setIsIcebergLayerHover] = useState(false);
   const [isNearCustomCursorTarget, setIsNearCustomCursorTarget] = useState(false);
 
   const mouseX = useMotionValue(-100);
@@ -149,6 +150,7 @@ export default function App() {
     setIsDragAreaActive(false);
     setIsDragCursorIconLatched(false);
     setIsExpandHover(false);
+    setIsIcebergLayerHover(false);
     setIsNearCustomCursorTarget(false);
   }, [currentSlide]);
 
@@ -166,6 +168,7 @@ export default function App() {
     setIsDragAreaActive(false);
     setIsDragCursorIconLatched(false);
     setIsExpandHover(false);
+    setIsIcebergLayerHover(false);
     setIsNearCustomCursorTarget(false);
     setIsNearInteractive(false);
     setIsOnInteractive(false);
@@ -235,7 +238,9 @@ export default function App() {
 
     const els = pointerOverShield
       ? ([] as NodeListOf<Element> | Element[])
-      : document.querySelectorAll('button, a, input, select, textarea, [role="button"]');
+      : document.querySelectorAll(
+          'button, a, input, select, textarea, [role="button"], [data-experience-card]',
+        );
     let near = false;
     let on = false;
     let nearCustomCursorTarget = false;
@@ -250,7 +255,11 @@ export default function App() {
 
       if (isNearElement) {
         near = true;
-        if (el instanceof HTMLElement && el.dataset.expandHotspot === "slide-6") {
+        if (
+          el instanceof Element &&
+          (el.getAttribute("data-expand-hotspot") === "slide-6" ||
+            el.hasAttribute("data-iceberg-layer"))
+        ) {
           nearCustomCursorTarget = true;
         }
       }
@@ -270,8 +279,13 @@ export default function App() {
     if (isInfographicExpanded) return;
     if (isModalOpen) return;
     const target = event.target instanceof Element ? event.target : null;
-    // Ignora cliques na modal mesmo após fechar no mouseUp (antes do click disparar).
-    if (target?.closest("[data-nng-modal], [data-roles-modal]")) return;
+    // Os modais consomem o gesto e nunca devem accionar a navegação entre slides.
+    if (
+      target?.closest(
+        "[data-nng-modal], [data-roles-modal], [data-iceberg-modal], [data-experience-modal]",
+      )
+    ) return;
+    if (target?.closest("[data-experience-card]")) return;
     if (target?.closest('button, a, input, select, textarea, [role="button"]')) return;
 
     const clickIsLeftHalf = event.clientX < window.innerWidth / 2;
@@ -303,6 +317,10 @@ export default function App() {
   const showBackCursor = currentSlide > 0 && isLeftHalf;
   const showRepeatCursor = isClosingSlide && !isLeftHalf;
   const isInfographicActionCursor = isInfographicExpanded || isExpandHover;
+  const isIcebergActionCursor =
+    currentSlide === 3 && isIcebergLayerHover && !isModalOpen;
+  const isCustomActionCursor =
+    isInfographicActionCursor || isIcebergActionCursor;
   const isInteractiveSuppressingCursor = isOnInteractive && !isNearCustomCursorTarget;
   const showDragCursorIcon = isDragAreaActive || isDragCursorIconLatched;
 
@@ -330,6 +348,7 @@ export default function App() {
         setIsDragCursorIconLatched(false);
         setIsNearInteractive(false);
         setIsOnInteractive(false);
+        setIsIcebergLayerHover(false);
         setIsNearCustomCursorTarget(false);
         logoMouseActiveRef.current = false;
         if (logoMouseIdleTimerRef.current !== null) {
@@ -501,6 +520,11 @@ export default function App() {
             scaleY={scaleY}
             onPrev={goPrev}
             onNext={goNext}
+            onModalChange={(open) => {
+              setIsModalOpen(open);
+              if (open) setIsIcebergLayerHover(false);
+            }}
+            onLayerHover={setIsIcebergLayerHover}
           />
         )}
 
@@ -512,6 +536,7 @@ export default function App() {
             scaleY={scaleY}
             onPrev={goPrev}
             onNext={goNext}
+            onModalChange={setIsModalOpen}
           />
         )}
 
@@ -638,17 +663,17 @@ export default function App() {
           boxShadow: "0 8px 24px 0 rgba(5, 28, 117, 0.16), 0 2px 4px 0 rgba(5, 28, 117, 0.24)",
         }}
         animate={{
-          opacity: isInfographicActionCursor ? (cursorReady && cursorVisible ? 1 : 0) : (!isModalOpen && cursorReady && cursorVisible && !isInteractiveSuppressingCursor ? 1 : 0),
-          scale: isInfographicActionCursor ? (cursorReady && cursorVisible ? 1 : 0.4) : (isInteractiveSuppressingCursor ? 0 : (isTapping ? 0.82 : (cursorReady && cursorVisible ? 1 : 0.4))),
-          width: isInfographicActionCursor ? vs(INFOGRAPHIC_CURSOR_SIZE) : (isDragAreaActive ? vs(80) : (showBackCursor ? vs(56) : vs(80))),
-          height: isInfographicActionCursor ? vs(INFOGRAPHIC_CURSOR_SIZE) : (isDragAreaActive ? vs(40) : (showBackCursor ? vs(56) : vs(80))),
+          opacity: isCustomActionCursor ? (cursorReady && cursorVisible ? 1 : 0) : (!isModalOpen && cursorReady && cursorVisible && !isInteractiveSuppressingCursor ? 1 : 0),
+          scale: isCustomActionCursor ? (cursorReady && cursorVisible ? 1 : 0.4) : (isInteractiveSuppressingCursor ? 0 : (isTapping ? 0.82 : (cursorReady && cursorVisible ? 1 : 0.4))),
+          width: isCustomActionCursor ? vs(INFOGRAPHIC_CURSOR_SIZE) : (isDragAreaActive ? vs(80) : (showBackCursor ? vs(56) : vs(80))),
+          height: isCustomActionCursor ? vs(INFOGRAPHIC_CURSOR_SIZE) : (isDragAreaActive ? vs(40) : (showBackCursor ? vs(56) : vs(80))),
         }}
         transition={{
           opacity: { duration: isInteractiveSuppressingCursor && !isInfographicActionCursor ? 0.18 : 0.3, ease: "easeInOut" },
           scale: {
             duration: isInteractiveSuppressingCursor && !isInfographicActionCursor ? 0.22 : (isTapping ? 0.12 : 0.3),
             ease: isInteractiveSuppressingCursor && !isInfographicActionCursor ? "easeIn" : (isTapping ? "easeOut" : undefined),
-            type: (!isInteractiveSuppressingCursor && !isTapping) || isInfographicActionCursor ? "spring" : "tween",
+            type: (!isInteractiveSuppressingCursor && !isTapping) || isCustomActionCursor ? "spring" : "tween",
             stiffness: 300,
           },
           width: { duration: 0.25, ease: "easeInOut" },
@@ -656,7 +681,22 @@ export default function App() {
         }}
         className="flex items-center justify-center bg-[#036ef2] rounded-full"
       >
-        {isInfographicActionCursor ? (
+        {isIcebergActionCursor ? (
+          <motion.svg
+            key="iceberg-plus"
+            initial={{ opacity: 0, rotate: -45, scale: 0.6 }}
+            animate={{ opacity: 1, rotate: 0, scale: 1 }}
+            exit={{ opacity: 0, rotate: 45, scale: 0.6 }}
+            transition={{ duration: 0.18, ease: "easeOut" }}
+            width={vs(32)}
+            height={vs(32)}
+            viewBox="0 0 32 32"
+            fill="none"
+            aria-hidden
+          >
+            <path d="M14 7H18V14H25V18H18V25H14V18H7V14H14V7Z" fill="white" />
+          </motion.svg>
+        ) : isInfographicActionCursor ? (
           <div
             style={{
               position: "relative",

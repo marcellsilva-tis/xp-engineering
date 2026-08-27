@@ -262,7 +262,7 @@ const designSystemBottomCards = [
   },
   {
     title: "Acessibilidade como premissa",
-    body: "WCAG AA como referência de qualidade. Tokens, componentes e documentação consideram contraste, foco visível, estados, ARIA e padrões acessíveis de interação.",
+    body: "WCAG AA como referência de qualidade. Tokens, componentes e documentação consideram contraste, foco visível, estados, ARIA e padrões acessíveis de interacção.",
   },
 ];
 

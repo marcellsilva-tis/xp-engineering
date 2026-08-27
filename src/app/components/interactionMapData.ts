@@ -95,7 +95,7 @@ export const INTERACTION_MAP_PANELS: InteractionMapPanel[] = [
           "Desenvolve inteligência preditiva, modelos de Inteligência Artificial (IA) e análises de dados para o negócio.",
         xpRole: "transforma os dados em melhorias práticas na experiência do produto.",
         receives: "Modelos de inteligência artificial aplicados e insights baseados em dados de negócio.",
-        delivers: "Experiências digitais inteligentes e interações personalizadas para o utilizador.",
+        delivers: "Experiências digitais inteligentes e interacções personalizadas para o utilizador.",
       },
     ],
   },

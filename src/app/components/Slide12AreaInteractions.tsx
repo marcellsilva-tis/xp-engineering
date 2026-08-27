@@ -24,11 +24,11 @@ interface Props {
 
 const PAGE_HEADERS = [
   {
-    title: "Interações com as demais áreas",
+    title: "Interacções com as demais áreas",
     body: "O Núcleo de Experiência como conexão entre negócio, utilizador e tecnologia.",
   },
   {
-    title: "Mapa de interações",
+    title: "Mapa de interacções",
     body: "Áreas com as quais o Núcleo de Experiência interage e o tipo de relação em cada caso.",
   },
   {

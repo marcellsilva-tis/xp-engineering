@@ -454,9 +454,9 @@ function TisLogo({ scale }: { scale: (n: number) => number }) {
 function Header({ page, metrics }: { page: number; metrics: Metrics }) {
   const { vx, vy, vs } = metrics;
   const subtitle =
-    page === 0
-      ? "Da criação pontual de ecrãs para um modelo operacional de experiência."
-      : "Da criação pontual de ecrãs para um modelo operacional de experiência.";
+    page === 2
+      ? "Mudança cultural para actuação orientada ao utilizador."
+      : "Mudança cultural e actuação orientada ao problema.";
 
   return (
     <motion.div
@@ -497,7 +497,7 @@ function Header({ page, metrics }: { page: number; metrics: Metrics }) {
             color: NAVY,
           }}
         >
-          Modelo de actuação
+          Modelos de actuação
         </p>
       </div>
       <p
@@ -715,22 +715,20 @@ function PageOne({ metrics }: { metrics: Metrics }) {
         }}
       >
         <Bullet metrics={metrics}>
-          <span style={{ display: "block", marginBottom: vy(8) }}>Criar uma porta de entrada única para pedidos, com briefing mínimo:</span>
+          <span style={{ display: "block", marginBottom: vy(8) }}>A mudança de cultura começa por questionar:</span>
           <strong style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}>
-            Objectivos de negócio, público, contexto de uso, restrições, prazo, stakeholders e critérios de sucesso.
+            Objectivos de negócio, público (personas), stakeholders, contexto de uso, restrições, prazo e critérios de sucesso.
           </strong>
         </Bullet>
-        <Bullet metrics={metrics}>Classificar pedidos por níveis de risco e incerteza.</Bullet>
         <Bullet metrics={metrics}>
-          Definir tipos de demandas:{" "}
+          Envolver o utilizador no processo desde o início:{" "}
           <strong style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}>
-            Quick win, Melhoria, Nova funcionalidade e Novo produto
+            entrevistas, testes de usabilidade e validações contínuas
           </strong>
-          , cada um com métodos, prazos, papéis e entregáveis compatíveis.
+          {" "}contribui para que as decisões respondam a necessidades reais.
         </Bullet>
         <Bullet metrics={metrics}>
-          <strong style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 800 }}>Estabelecer gates mínimos:</strong> problema
-          compreendido, escopo validado, uso do Design System, critérios de acessibilidade, handoff e métrica pós-release.
+          Cada pedido deve ser classificado considerando o nível de risco e incerteza. Isto permite definir os métodos, prazos, papéis e entregáveis.
         </Bullet>
       </ul>
 
@@ -747,8 +745,7 @@ function PageOne({ metrics }: { metrics: Metrics }) {
           color: NAVY,
         }}
       >
-        O núcleo passa a actuar com critério de triagem e priorização. Reduzindo entrada tardia, retrabalho e decisões baseadas apenas em percepção
-        visual.
+        Ao focar no problema real e envolver o utilizador desde o início, eliminamos retrabalho causado por decisões baseadas apenas em percepção interna.
       </p>
 
       <motion.div
@@ -950,7 +947,7 @@ function ClassificationText({
             color: BLUE,
           }}
         >
-          CritérioS de classificação
+          Critérios de classificação
         </p>
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
@@ -1185,8 +1182,8 @@ function PageTwo({
             color: NAVY,
           }}
         >
-          O processo e os entregáveis mudam conforme a necessidade, considerando o grau de risco e incerteza envolvidos. Nem toda demanda precisa
-          de Discovery completo, mas toda demanda precisa seguir um critério claro.
+          O processo e os entregáveis mudam conforme a necessidade, considerando o grau de risco e incerteza envolvidos. Nem todo pedido precisa
+          de Discovery completo, mas todo pedido precisa seguir um critério claro.
         </p>
         <ClassificationText
           index={classificationIndex}

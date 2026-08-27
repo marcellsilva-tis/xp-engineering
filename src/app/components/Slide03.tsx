@@ -21,6 +21,11 @@ const stagger = (i: number) => ({
 const CARD_WIDTHS = [1320, 1680, 1680];
 const CARD_GAP = 32;
 const TOTAL_CARDS = 3;
+const CARD_NOTES = [
+  "O trabalho de UX começa pelo desenho, sem participação na definição do escopo e sem espaço para análise.",
+  "O processo não integra discovery, validação com utilizadores nem margem para investigação.",
+  "O impacto é retrabalho, soluções desalinhadas e potencial inexplorado.",
+];
 
 export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
   const { vx, vy, vs } = createSlideMetrics(scaleX, scaleY);
@@ -204,7 +209,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  O ponto de partida do projecto é o desenho de ecrãs, porque os programadores precisam de material para trabalhar. As etapas anteriores nem sempre acontecem.
+                  A primeira entrega esperada são ecrãs para desenvolvimento. Etapas como enquadramento do problema e compreensão do contexto ficam por fazer.
                 </p>
               </div>
             </div>
@@ -244,13 +249,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Discovery não integrado
+                  Discovery inexistente ou superficial
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  A actuação concentra-se no brainstorming e na criação de ecrãs. A compreensão do problema fica por aprofundar.
+                  Não há uma fase estruturada de investigação. A compreensão do problema baseia-se em suposições, sem contacto directo com utilizadores.
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
@@ -258,13 +263,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Validação com stakeholders
+                  Validação sem utilizadores reais
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  Os protótipos são validados apenas com stakeholders, sem testes com utilizadores. Alguns problemas só são identificados mais tarde.
+                  As decisões de design são validadas internamente, com base em opiniões. Problemas de usabilidade só surgem após a implementação.
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
@@ -272,13 +277,13 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Âmbitos pré-definidos
+                  Escopo rígido e fragmentado
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  As user stories têm, muitas vezes, detalhe insuficiente; as orientações chegam fragmentadas e com pouco espaço para exploração.
+                  As orientações chegam fragmentadas, com pouco contexto e sem margem para o núcleo investigar o problema real por trás do pedido.
                 </p>
               </div>
             </div>
@@ -288,14 +293,14 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
         {/* ── Card 03 – Consequência ── */}
         <div
           style={{
-            width: "fit-content",
+            width: vx(1680),
             flexShrink: 0,
             padding: `${vy(48)}px ${vx(56)}px`,
             borderRadius: vs(40),
             backgroundImage: cardBg,
           }}
         >
-          <div style={{ display: "flex", gap: vx(64), alignItems: "flex-start" }}>
+          <div style={{ display: "flex", gap: vx(64), alignItems: "flex-start", width: "100%" }}>
             {/* Number */}
             <div style={{ display: "flex", flexDirection: "column", gap: vs(8), flexShrink: 0, width: vx(160) }}>
               <p
@@ -311,20 +316,48 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
                 03
               </p>
             </div>
-            {/* Single content block */}
-            <div style={{ flexShrink: 0, width: vx(460) }}>
-              <div style={{ display: "flex", flexDirection: "column", gap: vs(12) }}>
+            {/* 3-col content */}
+            <div style={{ display: "flex", flex: 1, gap: vx(64), alignItems: "flex-start", minWidth: 0 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
                 <p
                   style={{ fontSize: vs(28), lineHeight: 1.3 }}
                   className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
                 >
-                  Projectos descartados
+                  Experiências comprometidas
                 </p>
                 <p
                   style={{ fontSize: vs(20), lineHeight: 1.5 }}
                   className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
                 >
-                  Alguns projectos podem não avançar por não responderem à necessidade real ou por factores não considerados.
+                  Projectos avançam sem necessidades claras, resultando em soluções que não correspondem ao problema real dos utilizadores.
+                </p>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
+                <p
+                  style={{ fontSize: vs(28), lineHeight: 1.3 }}
+                  className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
+                >
+                  Potencial inexplorado
+                </p>
+                <p
+                  style={{ fontSize: vs(20), lineHeight: 1.5 }}
+                  className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
+                >
+                  Sem uma visão integrada da experiência, oportunidades de melhoria passam despercebidas e o produto entregue fica aquém do esperado.
+                </p>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: vs(12), flex: 1, minWidth: 0 }}>
+                <p
+                  style={{ fontSize: vs(28), lineHeight: 1.3 }}
+                  className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d]"
+                >
+                  Retrabalho e projectos descartados
+                </p>
+                <p
+                  style={{ fontSize: vs(20), lineHeight: 1.5 }}
+                  className="font-['Manrope',sans-serif] font-normal text-[#2f3237]"
+                >
+                  Decisões sem validação com utilizadores geram retrabalho. Em alguns casos, os projectos podem ser descartados por não responderem à necessidade real.
                 </p>
               </div>
             </div>
@@ -337,7 +370,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
         style={{
           position: "absolute",
           left: vx(128),
-          top: vy(741),
+          top: vy(765),
           display: "flex",
           gap: vx(32),
           alignItems: "center",
@@ -390,7 +423,7 @@ export function Slide03({ scaleX, scaleY, onDragAreaHover }: Props) {
         }}
         className="font-['Bronkoh-Heavy',sans-serif] not-italic text-[#04165d] whitespace-nowrap"
       >
-        O núcleo é envolvido tarde por não ter uma porta de entrada formalizada.
+        {CARD_NOTES[currentCard]}
       </motion.p>
 
       {/* ── Footer ── */}

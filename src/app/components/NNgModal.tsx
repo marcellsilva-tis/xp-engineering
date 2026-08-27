@@ -81,7 +81,7 @@ const LEVELS: {
     body: (vs) => (
       <p style={{ fontSize: vs(20), letterSpacing: vs(0.25), lineHeight: 1.4 }}
          className="font-['Manrope',sans-serif] font-normal text-[rgba(255,255,255,0.6)]">
-        Quando as organizações atingem o estágio de UX integrado, o seu trabalho de UX torna-se abrangente, omnipresente e universal. Quase todas as equipas dentro da organização realizam atividades relacionadas com UX de forma eficiente e eficaz. Muitas vezes há inovação nos métodos e processos de UX e até contribuições para o campo do UX.
+        Quando as organizações atingem o estágio de UX integrado, o seu trabalho de UX torna-se abrangente, omnipresente e universal. Quase todas as equipas dentro da organização realizam actividades relacionadas com UX de forma eficiente e eficaz. Muitas vezes há inovação nos métodos e processos de UX e até contribuições para o campo do UX.
       </p>
     ),
   },
@@ -101,7 +101,7 @@ const LEVELS: {
 export function NNgModal({ open, onClose, scaleX, scaleY }: NNgModalProps) {
   const { s, vs, vx } = createSlideMetrics(scaleX, scaleY);
 
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const directionRef = useRef(1);
   const cardRef = useRef<HTMLDivElement | null>(null);
   const mouseDownOutsideRef = useRef(false);

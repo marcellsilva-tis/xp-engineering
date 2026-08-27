@@ -128,7 +128,7 @@ const tooltipByLabel: Record<string, TooltipData> = {
   },
   "Análise SWOT": {
     title: "Análise SWOT",
-    body: "Avaliar forças, fraquezas, oportunidades e ameaças relacionadas ao produto, serviço ou contexto.",
+    body: "Avaliar forças, fraquezas, oportunidades e ameaças relacionadas com o produto, serviço ou contexto.",
     tools: [primaryTool("FigJam"), primaryTool("Microsoft Whiteboard"), primaryTool("Office"), secondaryTool("Miro")],
     ai: "Apoio para estruturar a matriz SWOT, cruzar evidências e identificar implicações estratégicas.",
   },
@@ -158,7 +158,7 @@ const tooltipByLabel: Record<string, TooltipData> = {
   },
   Protótipos: {
     title: "Protótipos",
-    body: "Simular navegação, interação, comportamento e proposta de valor.",
+    body: "Simular navegação, interacção, comportamento e proposta de valor.",
     tools: [primaryTool("Figma"), primaryTool("Figma Make"), primaryTool("Google Stitch"), secondaryTool("Lovable"), secondaryTool("UX Pilot"), secondaryTool("Framer")],
     ai: "Criação de protótipos funcionais para validação rápida, geração de conteúdo como imagens e textos.",
   },
@@ -194,7 +194,7 @@ const tooltipByLabel: Record<string, TooltipData> = {
   },
   "Testes de acessibilidade": {
     title: "Testes de acessibilidade",
-    body: "Verificar contraste, navegação por teclado, leitores de tela, focus, semântica e conformidade.",
+    body: "Verificar contraste, navegação por teclado, leitores de ecrã, foco, semântica e conformidade.",
     tools: [primaryTool("WCAG"), primaryTool("Stark"), primaryTool("Accessible Web"), secondaryTool("Axe DevTools"), secondaryTool("BrowserStack")],
     ai: "Apoio para elaborar checklist, análise, consulta rápida, priorização de problemas e documentação de correções.",
   },
